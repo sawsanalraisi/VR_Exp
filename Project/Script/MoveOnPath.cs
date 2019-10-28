@@ -8,8 +8,8 @@ public class MoveOnPath : MonoBehaviour
     public float Speed;
     public int Current;
     public bool IsMovePlayer=true;
-
      public Animator Anim;
+  //  public int WayPointStop;
 
 
     // Start is called before the first frame update
@@ -33,7 +33,6 @@ public class MoveOnPath : MonoBehaviour
             else
             {
                 Current = (Current + 1) % targets.Length;
-
                 if (Current == 4)
                 {
                     IsMovePlayer = false;
